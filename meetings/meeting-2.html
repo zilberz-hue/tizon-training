@@ -12,20 +12,13 @@
 <style>
 /* Layout: single RTL column; vision hero, proportional time ribbon, numbered agenda (a real sequence), products grid inside section 4 */
 :root{
-  --bg:#0f1712; --surface:rgba(255,255,255,.045); --line:rgba(212,180,110,.22);
-  --fg:#efe7d6; --muted:#a9a48f; --gold:#c9a46a; --green:#7cb342; --gold-soft:rgba(201,164,106,.12);
+  --bg:#ffffff; --surface:#faf7f0; --line:rgba(140,110,50,.25);
+  --fg:#1d2a21; --muted:#5f6656; --gold:#9c7840; --green:#4f8a22; --gold-soft:rgba(154,122,47,.1);
   --display:"Frank Ruhl Libre","David",Georgia,serif;
   --body:"Assistant","Arial Hebrew",Arial,sans-serif;
-  color-scheme:dark;
+  color-scheme:light;
 }
-@media (prefers-color-scheme: light){:root:not([data-theme="dark"]){
-  --bg:#f6f1e5; --surface:rgba(255,255,255,.7); --line:rgba(140,110,50,.25);
-  --fg:#1d2a21; --muted:#5f6656; --gold:#9c7840; --green:#4f8a22; --gold-soft:rgba(154,122,47,.1); color-scheme:light}}
-:root[data-theme="light"]{
-  --bg:#f6f1e5; --surface:rgba(255,255,255,.7); --line:rgba(140,110,50,.25);
-  --fg:#1d2a21; --muted:#5f6656; --gold:#9c7840; --green:#4f8a22; --gold-soft:rgba(154,122,47,.1); color-scheme:light}
-body{background:var(--bg);color:var(--fg);font-family:var(--body);font-size:17px;line-height:1.6;
-  background-image:radial-gradient(60rem 30rem at 85% -10%,var(--gold-soft),transparent 70%)}
+body{background:var(--bg);color:var(--fg);font-family:var(--body);font-size:17px;line-height:1.6}
 .wrap{max-width:780px;margin:0 auto;padding-block:48px 72px;
   padding-left:max(16px,env(safe-area-inset-left,0px));padding-right:max(16px,env(safe-area-inset-right,0px));
   display:grid;gap:44px}
@@ -36,9 +29,7 @@ h1 em{font-style:normal;color:var(--gold)}
 .hero{display:grid;gap:14px}
 .logo{justify-self:center}
 .logo img{display:block;width:min(170px,42vw);height:auto}
-.logo .lg-light{display:none}
-@media (prefers-color-scheme: light){:root:not([data-theme="dark"]) .logo .lg-dark{display:none}:root:not([data-theme="dark"]) .logo .lg-light{display:block}}
-:root[data-theme="light"] .logo .lg-dark{display:none}:root[data-theme="light"] .logo .lg-light{display:block}
+.logo .lg-dark{display:none}
 .date{font-size:1.05rem;font-weight:700;color:var(--gold);font-variant-numeric:tabular-nums}
 .tagline{font-size:.85rem;letter-spacing:.08em;color:var(--muted)}
 .meta{color:var(--muted);font-size:.95rem}
