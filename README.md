@@ -7,6 +7,8 @@
 index.html              תפריט ראשי
 meetings/meeting-1.html מפגש ראשון – מפגש השותפים המייסדים (19.10.2026)
 meetings/meeting-2.html מפגש שני – הדרכת שותפים (26.10.2026)
+meetings/meeting-3.html מפגש שלישי – הדרכה על האפליקציה (2.11.2026)
+appendix/teams.html     נספח – חלוקה לצוותי עבודה
 assets/                 לוגו עם רקע שקוף (גרסה לרקע בהיר ולרקע כהה)
 netlify.toml            פריסה ל-Netlify ללא שלב בנייה
 ```
